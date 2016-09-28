@@ -37,15 +37,12 @@ int main(int argc, char* argv[]) {
 
     vector<double> coeffs;
     double x;
-    while(true) {
-        coeff_file >> x;
-        if (!coeff_file) break;
+    while(coeff_file >> x) {
         coeffs.push_back(x);
     }
     coeff_file.close();
 
-    while(cin) {
-        cin >> x;
+    while(cin >> x) {
         cout << poly_eval(coeffs, x) << endl;
     }
 

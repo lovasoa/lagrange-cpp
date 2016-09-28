@@ -62,10 +62,7 @@ int main()
     vector<point_t> points;
  
     point_t p;
-    while(true) {
-        cin >> p.x;
-        cin >> p.y;
-        if (!cin) break;
+    while((cin >> p.x) && (cin >> p.y)) {
         points.push_back(p);
     }
 
