@@ -5,12 +5,13 @@ x2 y2
 on its standard input, and prints newline-separated coefficients of a polynomial on its standard
 output. The polynomial is such that for all i P(x_i) = y_i.
 
+This program works in O(N^3) where N is the number of input points.
+
 (C) 2016 Ophir LOJKINE
 **/
 
 #include <iostream>
 #include <vector>
-#include <functional>
 #include <algorithm>
 
 using namespace std;
