@@ -27,3 +27,6 @@
 *.exe
 *.out
 *.app
+points.txt
+coeffs
+poly_exec

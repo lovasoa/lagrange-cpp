@@ -5,3 +5,5 @@ CPPFLAGS=-std=c++14
 	$(CC) $(CPPFLAGS) $< -o $@
 
 all: coeffs poly_exec
+clean:
+	rm -rf coeffs poly_exec
